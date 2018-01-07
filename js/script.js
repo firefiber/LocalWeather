@@ -1,5 +1,5 @@
 ////OpenWeatherMap API KEY 5b72d586dd7fd8a9036a04859fa2a7c7
-//
+
 function json(){
   navigator.geolocation.getCurrentPosition(success);
   function success(position){
@@ -21,15 +21,6 @@ function json(){
     }
   }
 }
-//$.ajax({
-//  url: "https://api.openweathermap.org/data/2.5/weather",
-//  jsonp: false,
-//  data:{
-//    "q": "London",
-//    "APPID": "5b72d586dd7fd8a9036a04859fa2a7c7",
-//    "callback": 'showWeather'
-//  }
-//});
 
 function showWeather(data){
   var parseData = JSON.parse(data);
@@ -41,14 +32,7 @@ function showWeather(data){
   div.appendChild(country);
   div.appendChild(temp);
 }
-//
-////(function(){
-////  jsonp();
-////  document.querySelector('button').onclick = function(){
-////    jsonp();
-////  }
-////})();
-//
+
 (function(){
   json();
 })();
