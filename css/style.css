@@ -1,0 +1,87 @@
+body{
+  background: #303030;
+  color: #303030;
+}
+
+section{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: coral;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+  section h1{
+    text-align: center;
+    font-family: 'Lobster';
+
+    font-size: 4em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position relative;
+  }
+
+  section h1:after{
+    content: "";
+    background: black;
+    position: absolute;
+    height: 1px;
+    left: 25%;
+    top: 35%;
+    width: 50%;
+  }
+
+div#container{
+  margin: auto;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 1.5em;
+}
+
+button{
+  background-color: #303030;
+  color: coral;
+  padding: 5px;
+  width: 60px;
+  font-size: .8em;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 800px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  section{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    background-color: coral;
+    border-radius: 20px;
+    position: relative;
+  }
+
+ section h1{
+    margin: 0;
+    padding-top: 35px;;
+    font-size: 3.2em;
+  }
+
+  section h1:after{
+    content: "";
+    background: black;
+    position: absolute;
+    height: 1px;
+    left: 20%;
+    top: 25%;
+    width: 60%;
+  }
+
+  div#units{
+    padding-top: 15%;
+  }
+}
