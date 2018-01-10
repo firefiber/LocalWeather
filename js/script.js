@@ -48,19 +48,21 @@ function showWeather(data){
   let iconURL = "http://openweathermap.org/img/w/";
   let temp = document.createElement('p');
   let img = document.createElement('img');
+  let kd = data.main.temp;
+  let tempNum = kd.toFixed(0);
 
-  temp.textContent = data.main.temp+" °C";
+  temp.textContent = tempNum+" °C";
   img.src=iconURL+data.weather[0].icon+".png";
   let div = document.getElementById("weatherStats");
   div.appendChild(temp);
   div.appendChild(img);
 
   document.getElementById("far").onclick = function(){
-    let farTmp = ((data.main.temp)*9/5)+32
-    temp.textContent = farTmp.toFixed(2)+" °F";
+    let farTmp = ((tempNum)*9/5)+32
+    temp.textContent = farTmp.toFixed(0)+" °F";
   };
   document.getElementById("cel").onclick = function(){
-    temp.textContent = data.main.temp+" °C";
+    temp.textContent = tempNum+" °C";
   };
 }
 
