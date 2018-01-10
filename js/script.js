@@ -35,7 +35,7 @@ function json(){
       responseObj = mapsRequest.response;
       console.log(responseObj);
       showLocation(responseObj);
-      alert(responseObj.results[0].formatted_address)
+//      alert(responseObj.results[0].formatted_address)
     }
   }
 }
