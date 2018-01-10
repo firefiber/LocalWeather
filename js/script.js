@@ -39,16 +39,21 @@ function json(){
 }
 
 function showLocation(data){
-  var country = document.createElement('p');
+  let country = document.createElement('p');
   country.textContent = data.results[3].formatted_address;
-  var div = document.getElementById("weatherStats");
+  let div = document.getElementById("weatherStats");
   div.appendChild(country);
 }
 function showWeather(data){
-  var temp = document.createElement('p');
+  let iconURL = "http://openweathermap.org/img/w/";
+  let temp = document.createElement('p');
+  let img = document.createElement('img');
+
   temp.textContent = data.main.temp+" °C";
-  var div = document.getElementById("weatherStats");
+  img.src=iconURL+data.weather[0].icon+".png";
+  let div = document.getElementById("weatherStats");
   div.appendChild(temp);
+  div.appendChild(img);
 
   document.getElementById("far").onclick = function(){
     let farTmp = ((data.main.temp)*9/5)+32
