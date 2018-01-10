@@ -6,8 +6,8 @@ function json(){
   function success(position){
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
-    alert(lat);
-    alert(lon);
+    //alert(lat);
+    //alert(lon);
 
     var weatherURL = "https://api.openweathermap.org/data/2.5/weather?&units=metric&APPID=5b72d586dd7fd8a9036a04859fa2a7c7"
     var gmapsURL = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyAKue3iOUaEZzcFkBk61UV7kTv1qSNGwlI"
