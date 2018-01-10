@@ -20,7 +20,7 @@ section{
     font-size: 4em;
     padding-top: 30px;
     padding-bottom: 30px;
-    position relative;
+    position: relative;
   }
 
   section h1:after{
@@ -29,7 +29,7 @@ section{
     position: absolute;
     height: 1px;
     left: 25%;
-    top: 35%;
+    top: 90%;
     width: 50%;
   }
 
