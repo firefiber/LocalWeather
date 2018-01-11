@@ -5,5 +5,5 @@
 <br>
 <br>
 
-* [Completed Page](https://firefiber.github.io/LocalWeather
+* [Completed Page](https://firefiber.github.io/LocalWeather)
 * [FCC Project](https://www.freecodecamp.org/challenges/show-the-local-weather)
